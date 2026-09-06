@@ -1,5 +1,5 @@
-#include "common.hpp"
 #include "pawn_structure.hpp"
+#include "common.hpp"
 
 #include <algorithm>
 

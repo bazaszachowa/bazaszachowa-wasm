@@ -15,7 +15,7 @@ using StringUint32Map =
 using StringUint8Map =
     std::unordered_map<std::string, uint8_t, TransparentStringHash,
                        std::equal_to<>>;
-                       
+
 namespace std {
 
 template <> struct hash<chess::Square> {

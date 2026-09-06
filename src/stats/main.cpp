@@ -29,11 +29,10 @@ template <typename T> double variance(const std::vector<T> &data) {
   }
 
   double mean = avg(data);
-  double var = 0.0;
 
-  for (const auto &x : data) {
-    var += (x - mean) * (x - mean);
-  }
+  double var = std::accumulate(
+      data.begin(), data.end(), 0.0,
+      [mean](double sum, const T &x) { return sum + (x - mean) * (x - mean); });
 
   return var / static_cast<double>(data.size());
 }

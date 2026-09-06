@@ -7,7 +7,7 @@
 
 using namespace chess;
 
-std::string convert_uci_to_pgn(std::vector<std::string> uci_moves) {
+std::string convert_uci_to_pgn(const std::vector<std::string> &uci_moves) {
   Board board = Board::fromFen(constants::STARTPOS);
   std::vector<std::string> san_moves;
 

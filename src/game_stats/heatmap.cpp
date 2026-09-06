@@ -1,5 +1,5 @@
-#include "common.hpp"
 #include "heatmap.hpp"
+#include "common.hpp"
 
 using namespace chess;
 

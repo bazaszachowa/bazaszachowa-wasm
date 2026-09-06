@@ -1,5 +1,5 @@
-#include "common.hpp"
 #include "mobility.hpp"
+#include "common.hpp"
 
 using namespace chess;
 
