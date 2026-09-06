@@ -45,7 +45,7 @@ jobs:
 
       - name: Checking sanity
         run: |
-          cmake \
+          emcmake cmake \
             -S . \
             -B build \
             -DCMAKE_CXX_FLAGS="-fsanitize=address,undefined -fno-omit-frame-pointer" \
