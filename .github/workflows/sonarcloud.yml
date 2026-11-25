@@ -32,5 +32,5 @@ jobs:
             -Dsonar.projectKey=kulandy_bazaszachowa-wasm
             -Dsonar.organization=kulandy
             -Dsonar.sources=src
-            -Dsonar.exclusions=chess-library/**
+            -Dsonar.exclusions=**/chess-library/**,chess-library/**
           projectBaseDir: .
